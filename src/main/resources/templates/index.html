@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>RickiAndMorty</title>
+</head>
+<body>
+<div class="cards">
+    <div th:each="result : ${results}">
+
+        <div class="card">
+            <img class="card-img-top" th:src="${result.image}" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text font-weight-bold h5" th:text="${result.name}"></p>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
