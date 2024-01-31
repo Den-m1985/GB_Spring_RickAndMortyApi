@@ -9,7 +9,9 @@
     <div th:each="result : ${results}">
 
         <div class="card">
-            <img class="card-img-top" th:src="${result.image}" alt="Card image cap">
+            <a th:href="@{'/character/' + ${result.id}}">
+                <img class="card-img-top" th:src="${result.image}" alt="Card image cap">
+            </a>
             <div class="card-body">
                 <p class="card-text font-weight-bold h5" th:text="${result.name}"></p>
             </div>

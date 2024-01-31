@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Character Details</title>
+</head>
+<body>
+<div class="card">
+    <img class="card-img-top" th:src="${character.image}" alt="Character Image">
+    <div class="card-body">
+        <p class="card-text font-weight-bold h5" th:text="${character.name}"></p>
+        <p class="card-text" th:text="${character.status}"></p>
+        <p class="card-text" th:text="${character.species}"></p>
+        <p class="card-text" th:text="${character.type}"></p>
+        <p class="card-text" th:text="${character.gender}"></p>
+        <p class="card-text" th:text="${character.created}"></p>
+    </div>
+</div>
+</body>
+</html>
